@@ -15,11 +15,15 @@ final class LoginExampleUITests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
+        
     }
 
     func testExample() throws {
         let app = XCUIApplication()
         app.launch()
-
+        
+        // Validation if the welcome text is displayed
+        let textHome = app.staticTexts["Bem Vindo"]
+        XCTAssert(textHome.exists)
     }
 }
