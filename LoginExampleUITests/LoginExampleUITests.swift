@@ -25,5 +25,12 @@ final class LoginExampleUITests: XCTestCase {
         // Validation if the welcome text is displayed
         let textHome = app.staticTexts["Bem Vindo"]
         XCTAssert(textHome.exists)
+        
+        //writing in the email field
+        let emailField = app.textFields["login_username"]
+        emailField.tap()
+        emailField.typeText("qazando@gmail.com")
+        emailField.typeText("\n")
+        
     }
 }
