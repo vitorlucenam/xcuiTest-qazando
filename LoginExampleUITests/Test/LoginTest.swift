@@ -6,12 +6,16 @@
 //  Copyright © 2024 Gary Tokman. All rights reserved.
 //
 
-import XCTest
+import Foundation
 
 final class LoginTest: GeneralTests {
+    
+    let login = LoginPage()
 
     func testExample() throws {
-        
+        login.validateTextInHome()
+        login.writeEmailFiel()
+        login.tapContinueButton()
     }
 
 }
