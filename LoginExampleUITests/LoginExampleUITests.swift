@@ -32,5 +32,18 @@ final class LoginExampleUITests: XCTestCase {
         emailField.typeText("qazando@gmail.com")
         emailField.typeText("\n")
         
+        //writing in the password field
+        let passwordField = app.textFields["login_password"]
+        passwordField.tap()
+        passwordField.typeText("123456")
+        passwordField.typeText("\n")
+        
+        // Clicking in continuar button
+        let buttonContinuar = app.buttons["login_button"]
+        buttonContinuar.tap()
+        
+        
+        
+        
     }
 }
