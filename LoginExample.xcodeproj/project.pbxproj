@@ -20,6 +20,9 @@
 		643CC99F2B968C6E00DCF842 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643CC99E2B968C6E00DCF842 /* LoginPage.swift */; };
 		646D27F72B94B71B00F0BA0A /* LoginExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D27F62B94B71B00F0BA0A /* LoginExampleUITests.swift */; };
 		646D27F92B94B71B00F0BA0A /* LoginExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D27F82B94B71B00F0BA0A /* LoginExampleUITestsLaunchTests.swift */; };
+		64B3571E2BABA6980017A827 /* LoginStepDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3571D2BABA6980017A827 /* LoginStepDefinitions.swift */; };
+		64B357202BABA6B30017A827 /* SetupTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3571F2BABA6B30017A827 /* SetupTestBase.swift */; };
+		64B357222BABA6E20017A827 /* TestBddExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B357212BABA6E20017A827 /* TestBddExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		646D27F42B94B71B00F0BA0A /* LoginExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		646D27F62B94B71B00F0BA0A /* LoginExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExampleUITests.swift; sourceTree = "<group>"; };
 		646D27F82B94B71B00F0BA0A /* LoginExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64B3571D2BABA6980017A827 /* LoginStepDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStepDefinitions.swift; sourceTree = "<group>"; };
+		64B3571F2BABA6B30017A827 /* SetupTestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTestBase.swift; sourceTree = "<group>"; };
+		64B357212BABA6E20017A827 /* TestBddExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBddExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,14 +135,25 @@
 		646D27F52B94B71B00F0BA0A /* LoginExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				643CC9962B9688B200DCF842 /* GeneralTests.swift */,
+				64B3571C2BABA6670017A827 /* BDD */,
 				643CC99B2B968ABD00DCF842 /* Helper */,
 				643CC9952B96886700DCF842 /* Test */,
 				643CC9942B96885B00DCF842 /* Pages */,
 				646D27F62B94B71B00F0BA0A /* LoginExampleUITests.swift */,
 				646D27F82B94B71B00F0BA0A /* LoginExampleUITestsLaunchTests.swift */,
+				643CC9962B9688B200DCF842 /* GeneralTests.swift */,
 			);
 			path = LoginExampleUITests;
+			sourceTree = "<group>";
+		};
+		64B3571C2BABA6670017A827 /* BDD */ = {
+			isa = PBXGroup;
+			children = (
+				64B3571D2BABA6980017A827 /* LoginStepDefinitions.swift */,
+				64B3571F2BABA6B30017A827 /* SetupTestBase.swift */,
+				64B357212BABA6E20017A827 /* TestBddExample.swift */,
+			);
+			path = BDD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				646D27F72B94B71B00F0BA0A /* LoginExampleUITests.swift in Sources */,
+				64B3571E2BABA6980017A827 /* LoginStepDefinitions.swift in Sources */,
+				64B357202BABA6B30017A827 /* SetupTestBase.swift in Sources */,
 				643CC9982B9688B800DCF842 /* GeneralTests.swift in Sources */,
 				646D27F92B94B71B00F0BA0A /* LoginExampleUITestsLaunchTests.swift in Sources */,
+				64B357222BABA6E20017A827 /* TestBddExample.swift in Sources */,
 				643CC99D2B968AEB00DCF842 /* MainUIHelper.swift in Sources */,
 				643CC99F2B968C6E00DCF842 /* LoginPage.swift in Sources */,
 				643CC99A2B968A2800DCF842 /* LoginTest.swift in Sources */,

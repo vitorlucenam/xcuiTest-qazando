@@ -6,4 +6,15 @@
 //  Copyright © 2024 Gary Tokman. All rights reserved.
 //
 
-import Foundation
+import XCTest
+
+class TestBddExample: SetupTestBase, login {
+    
+    
+    func testLoginSuccess(){
+        givenIWrightMyData()
+        whenIClickInContinue()
+        thenIShouldSeeLoggedArea()
+    }
+    
+}
